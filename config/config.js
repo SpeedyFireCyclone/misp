@@ -76,6 +76,15 @@ module.exports = {
       adminOnly: true
     },
     {
+      key: 'requireToIDS',
+      name: 'Require IDS flag to be set',
+      description: 'If checked, only attributes that have the IDS flag set will be returned as results',
+      default: false,
+      type: 'boolean',
+      userCanEdit: true,
+      adminOnly: false
+    },
+    {
       key: 'blocklist',
       name: 'Ignored Entities',
       description: 'List of domains and IPs that you never want to send to misp',

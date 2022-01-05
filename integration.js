@@ -401,6 +401,10 @@ function _getAttributeRequestOptions(entityObj, options) {
     },
     json: true
   };
+  
+  if (options.requireToIDS) {
+    requestOptions.body.to_ids = true
+  }
 
   return requestOptions;
 }
